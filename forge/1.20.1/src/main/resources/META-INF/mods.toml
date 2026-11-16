@@ -1,0 +1,35 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+logoFile="logo.png"
+logoBlur=false
+authors="${mod_authors}"
+displayTest="IGNORE_ALL_VERSION"
+
+description='''Made by <a href="https://discord.com/users/990003604725321808">Arthou</a>'''
+
+[[dependencies.${mod_id}]]
+    modId="forge"
+    mandatory=true
+    versionRange="${forge_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="ducurrency"
+    mandatory=false
+    versionRange="[1.3.6,)"
+    ordering="AFTER"
+    side="BOTH"
